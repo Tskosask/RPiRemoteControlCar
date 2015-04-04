@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.cs432.rpicarremote.remoteapplication.Remote" >
+    <item android:id="@+id/action_settings"
+          android:title="@string/action_settings"
+          android:orderInCategory="100"
+          app:showAsAction="never" />
+
+    <!-- TODO:Add drawable button -->
+    <item android:id="@+id/action_exit_remote"
+          android:title="@string/menu_exit_text"
+          app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_connect"
+          android:title="@string/menu_connect_text"
+          app:showAsAction="always" />
+</menu>

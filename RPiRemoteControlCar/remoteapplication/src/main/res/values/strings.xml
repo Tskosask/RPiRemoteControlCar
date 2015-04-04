@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">RPi Remote Control</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_exit_text">Exit</string>
+    <string name="menu_connect_text">Connect</string>
+    <string name="menu_connected_text">Reconnect</string>
+
+    <string name="bt_not_supported">Sorry, your device doesn\'t support bluetooth.</string>
+    <string name="bt_was_not_enabled">Bluetooth was not enabled. Enable Bluetooth and relaunch.</string>
+    <string name="bt_connected_to_device">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="bt_disconnected">You have been disconnected from your RPi car.</string>
+    <string name="bt_connecting">Connecting...</string>
+    <string name="bt_not_connected">You are currently not connected.</string>
+
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan!</string>
+    <string name="none_paired">No devices paired!</string>
+    <string name="scanning">Scanning for devices.</string>
+    <string name="select_device">Select a device.</string>
+    <string name="none_found">No devices found!</string>
+
+</resources>

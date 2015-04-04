@@ -1,0 +1,142 @@
+<GridLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:rowCount="48"
+    android:columnCount="92"
+    android:id="@+id/Grid"
+    android:background="#0066FF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/connection_state"
+        android:layout_column="73"
+        android:layout_row="1"/>
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:text="Right"
+        android:id="@+id/rightBtn"
+        android:layout_row="9"
+        android:layout_column="18"
+        android:layout_columnSpan="54"
+        android:background="@drawable/arrow_right"
+        android:onClick="goRight"
+        android:enabled="false"/>
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:id="@+id/leftBtn"
+        android:layout_row="9"
+        android:layout_column="1"
+        android:background="@drawable/arrow_left"
+        android:onClick="goLeft"
+        android:enabled="false"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:text="Down"
+        android:id="@+id/downBtn"
+        android:layout_row="10"
+        android:layout_column="14"
+        android:background="@drawable/arrow_down"
+        android:onClick="goBackward"
+        android:enabled="false"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Direction: 0"
+        android:id="@+id/directionTxt"
+        android:layout_row="1"
+        android:layout_column="86"
+        android:phoneNumber="false"
+        android:layout_columnSpan="5" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:text="Up"
+        android:id="@+id/upBtn"
+        android:layout_row="7"
+        android:layout_column="14"
+        android:background="@drawable/arrow_up"
+        android:onClick="goForward"
+        android:enabled="false"/>
+
+    <Button
+        android:layout_width="146dp"
+        android:layout_height="60dp"
+        android:text="Start"
+        android:id="@+id/startStopBtn"
+        android:layout_row="1"
+        android:layout_column="72"
+        android:layout_columnSpan="3"
+        android:onClick="startStop"
+        android:background="#fb009200" />
+
+    <Button
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="Turn Right"
+        android:id="@+id/rightSigBtn"
+        android:layout_row="9"
+        android:layout_column="87"
+        android:onClick="rightSig"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="Turn  Left"
+        android:id="@+id/leftSigBtn"
+        android:layout_row="9"
+        android:layout_column="77"
+        android:layout_columnSpan="1"
+        android:onClick="leftSig"
+        android:background="@android:color/transparent"/>
+
+
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/hLightsBtn"
+        android:layout_row="7"
+        android:layout_column="86"
+        android:textOff="Lights Off"
+        android:textOn="Lights On"
+        android:onClick="toggleHeadLights"
+        android:background="@android:color/transparent"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/glowBtn"
+        android:layout_row="10"
+        android:layout_column="86"
+        android:textOff="Glow Off"
+        android:textOn="Glow On"
+        android:onClick="toggleGlow"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="X:  \nY:   "
+        android:id="@+id/xyTxt"
+        android:layout_row="10"
+        android:layout_column="72"
+        android:layout_columnSpan="5"
+        android:visibility="invisible" />
+
+
+</GridLayout>
